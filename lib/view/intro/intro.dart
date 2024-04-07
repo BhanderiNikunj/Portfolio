@@ -1,9 +1,10 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:portfolio/resource/responsive.dart';
 import 'package:portfolio/view/intro/introMobile.dart';
 import 'package:portfolio/view/intro/introWeb.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
-
 import 'introTab.dart';
 
 class IntroContent extends StatefulWidget {
@@ -18,7 +19,7 @@ class IntroContent extends StatefulWidget {
 class _IntroContentState extends State<IntroContent> {
   @override
   Widget build(BuildContext context) {
-    return Responsive(
+    return ResponsiveScreen(
       tabView: IntroTab(widget.aScrollController),
       mobileView: IntroMobile(widget.aScrollController),
       webView: IntroWeb(widget.aScrollController),

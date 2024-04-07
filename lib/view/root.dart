@@ -1,6 +1,3 @@
-import 'dart:ui';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -44,25 +41,29 @@ class _RootScreenState extends ConsumerState<RootScreen> {
           },
           child: Container(
             decoration: BoxDecoration(
-                gradient: LinearGradient(
-                    begin: Alignment.bottomCenter,
-                    end: Alignment.topCenter,
-                    colors: [
+              gradient: LinearGradient(
+                begin: Alignment.bottomCenter,
+                end: Alignment.topCenter,
+                colors: [
                   Color(0xff112240),
                   Color(0xff0a192f),
                   Color(0xff020c1b)
-                ])),
+                ],
+              ),
+            ),
             height: AppClass().getMqHeight(context),
             child: Column(
               children: [
-                Consumer(builder: (context, ref, child) {
-                  var isScrollingUp = ref.watch(scrollControlProvider);
-                  return AnimatedOpacity(
-                    opacity: isScrollingUp ? 1.0 : 0.0,
-                    duration: const Duration(milliseconds: 500),
-                    child: ActionBar(mScrollController),
-                  );
-                }),
+                Consumer(
+                  builder: (context, ref, child) {
+                    var isScrollingUp = ref.watch(scrollControlProvider);
+                    return AnimatedOpacity(
+                      opacity: isScrollingUp ? 1.0 : 0.0,
+                      duration: const Duration(milliseconds: 500),
+                      child: ActionBar(mScrollController),
+                    );
+                  },
+                ),
                 Expanded(
                   child: () {
                     ScreenType scrType = AppClass().getScreenType(context);
@@ -70,48 +71,58 @@ class _RootScreenState extends ConsumerState<RootScreen> {
                       children: [
                         scrType == ScreenType.mobile ? SizedBox() : LeftPane(),
                         Expanded(
-                            flex: 8,
-                            child: Consumer(
-                              builder: (context, ref, child) {
-                                bool scrollHandler = ref.watch(scrollHandlerProvider);
-                                return ListView(
-                                  physics: scrollHandler ? AlwaysScrollableScrollPhysics() : NeverScrollableScrollPhysics(),
-                                  controller: mScrollController,
-                                  children: [
-                                    AutoScrollTag(
-                                        key: ValueKey(0),
-                                        controller: mScrollController,
-                                        index: 0,
-                                        child: IntroContent(mScrollController)),
-                                    AutoScrollTag(
-                                        key: ValueKey(1),
-                                        controller: mScrollController,
-                                        index: 1,
-                                        child: About()),
-                                    AutoScrollTag(
-                                        key: ValueKey(2),
-                                        controller: mScrollController,
-                                        index: 2,
-                                        child: Experience()),
-                                    AutoScrollTag(
-                                        key: ValueKey(3),
-                                        controller: mScrollController,
-                                        index: 3,
-                                        child: Work()),
-                                    AutoScrollTag(
-                                        key: ValueKey(4),
-                                        controller: mScrollController,
-                                        index: 4,
-                                        child: GameArea(mScrollController)),
-                                    AutoScrollTag(
-                                        key: ValueKey(5),
-                                        controller: mScrollController,
-                                        index: 5,
-                                        child: Contact())
-                                  ],
-                                );
-                              }
-                            )),
+                          flex: 8,
+                          child: Consumer(
+                            builder: (context, ref, child) {
+                              bool scrollHandler =
+                                  ref.watch(scrollHandlerProvider);
+                              return ListView(
+                                physics: scrollHandler
+                                    ? AlwaysScrollableScrollPhysics()
+                                    : NeverScrollableScrollPhysics(),
+                                controller: mScrollController,
+                                children: [
+                                  AutoScrollTag(
+                                    key: ValueKey(0),
+                                    controller: mScrollController,
+                                    index: 0,
+                                    child: IntroContent(mScrollController),
+                                  ),
+                                  AutoScrollTag(
+                                    key: ValueKey(1),
+                                    controller: mScrollController,
+                                    index: 1,
+                                    child: About(),
+                                  ),
+                                  AutoScrollTag(
+                                    key: ValueKey(2),
+                                    controller: mScrollController,
+                                    index: 2,
+                                    child: Experience(),
+                                  ),
+                                  AutoScrollTag(
+                                    key: ValueKey(3),
+                                    controller: mScrollController,
+                                    index: 3,
+                                    child: Work(),
+                                  ),
+                                  AutoScrollTag(
+                                    key: ValueKey(4),
+                                    controller: mScrollController,
+                                    index: 4,
+                                    child: GameArea(mScrollController),
+                                  ),
+                                  AutoScrollTag(
+                                    key: ValueKey(5),
+                                    controller: mScrollController,
+                                    index: 5,
+                                    child: Contact(),
+                                  ),
+                                ],
+                              );
+                            },
+                          ),
+                        ),
                         scrType == ScreenType.mobile ? SizedBox() : RightPane(),
                       ],
                     );
@@ -124,6 +135,4 @@ class _RootScreenState extends ConsumerState<RootScreen> {
       ),
     );
   }
-
-
 }

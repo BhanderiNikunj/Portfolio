@@ -1,7 +1,7 @@
 class Strings {
   /* Intro screen contents */
   static final welcomeTxt = '''Hi, my name is''';
-  static final name = '''Jeevanandham.'''; // add . at the end
+  static final name = '''Nikunj Bhanderi.'''; // add . at the end
   static final whatIdo =
       '''I build things for the mobile/web.'''; // add . at the end
   static final introAbout =
@@ -19,7 +19,7 @@ class Strings {
   static final techIntro =
       '''Here are a few technologies I’ve been working with recently:''';
   static final tech1 = ''' Flutter'''; // space for manual padding
-  static final tech2 = ''' NodeJs'''; // space for manual padding
+  static final tech2 = ''' PHP'''; // space for manual padding
   static final tech3 = ''' GraphQL'''; // space for manual padding
   static final tech4 = ''' Swift'''; // space for manual padding
 

@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio/controller/generalController.dart';
 import 'package:portfolio/resource/appClass.dart';
-
-import '../../controller/generalController.dart';
-import '../../resource/colors.dart';
-import '../../resource/strings.dart';
-import 'contact.dart';
+import 'package:portfolio/resource/colors.dart';
+import 'package:portfolio/resource/strings.dart';
 
 class ContactMobile extends ConsumerStatefulWidget {
   const ContactMobile({Key? key}) : super(key: key);

@@ -1,17 +1,19 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/cupertino.dart';
 import 'package:portfolio/resource/appClass.dart';
 
-class Responsive extends StatefulWidget {
+class ResponsiveScreen extends StatefulWidget {
   var mobileView, webView, tabView;
 
-  Responsive({Key? key, this.mobileView, this.tabView, this.webView})
+  ResponsiveScreen({Key? key, this.mobileView, this.tabView, this.webView})
       : super(key: key);
 
   @override
-  State<Responsive> createState() => _ResponsiveState();
+  State<ResponsiveScreen> createState() => _ResponsiveScreenState();
 }
 
-class _ResponsiveState extends State<Responsive> {
+class _ResponsiveScreenState extends State<ResponsiveScreen> {
   @override
   Widget build(BuildContext context) {
     ScreenType scrType = AppClass().getScreenType(context);

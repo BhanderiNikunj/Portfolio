@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/resource/appClass.dart';
-import 'package:portfolio/view/game/tetris.dart';
-
-import '../../controller/generalController.dart';
-import '../../resource/colors.dart';
-
 
 class GameAreaTab extends ConsumerStatefulWidget {
   const GameAreaTab({Key? key}) : super(key: key);

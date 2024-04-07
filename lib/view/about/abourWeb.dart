@@ -1,12 +1,10 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import '../../controller/generalController.dart';
-import '../../resource/appClass.dart';
-import '../../resource/colors.dart';
-import '../../resource/strings.dart';
+import 'package:portfolio/controller/generalController.dart';
+import 'package:portfolio/resource/appClass.dart';
+import 'package:portfolio/resource/colors.dart';
+import 'package:portfolio/resource/strings.dart';
 
 class AboutWeb extends ConsumerStatefulWidget {
   const AboutWeb({Key? key}) : super(key: key);
@@ -20,8 +18,9 @@ class _AboutWebState extends ConsumerState<AboutWeb> {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
-          left: AppClass().getMqWidth(context) * 0.03,
-          right: AppClass().getMqWidth(context) * 0.03),
+        left: AppClass().getMqWidth(context) * 0.03,
+        right: AppClass().getMqWidth(context) * 0.03,
+      ),
       padding: EdgeInsets.only(bottom: 40),
       child: Column(
         mainAxisSize: MainAxisSize.max,

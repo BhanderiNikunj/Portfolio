@@ -15,7 +15,7 @@ class About extends StatefulWidget {
 class _AboutState extends State<About> {
   @override
   Widget build(BuildContext context) {
-    return Responsive(
+    return ResponsiveScreen(
       webView: AboutWeb(),
       tabView: AboutTab(),
       mobileView: AboutMobile(),

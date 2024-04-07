@@ -1,10 +1,11 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio/resource/appClass.dart';
+import 'package:portfolio/resource/colors.dart';
 import 'package:portfolio/resource/strings.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
-
-import '../../resource/appClass.dart';
-import '../../resource/colors.dart';
 
 class IntroTab extends StatefulWidget {
   AutoScrollController aScrollController;

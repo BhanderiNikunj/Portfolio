@@ -1,8 +1,8 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:portfolio/resource/responsive.dart';
 import 'package:portfolio/view/game/gameAreaWeb.dart';
-import 'package:scroll_to_index/scroll_to_index.dart';
-
 import 'gameAreaMob.dart';
 import 'gameAreaTab.dart';
 
@@ -18,7 +18,7 @@ class GameArea extends StatefulWidget {
 class _GameAreaState extends State<GameArea> {
   @override
   Widget build(BuildContext context) {
-    return Responsive(
+    return ResponsiveScreen(
       webView: GameAreaWeb(widget.mScrollController),
       tabView: GameAreaTab(),
       mobileView: GameAreaMob(),

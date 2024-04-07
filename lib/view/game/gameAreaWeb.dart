@@ -1,14 +1,14 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio/controller/generalController.dart';
 import 'package:portfolio/resource/appClass.dart';
+import 'package:portfolio/resource/colors.dart';
 import 'package:portfolio/view/game/tetris.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
-
-import '../../controller/generalController.dart';
-import '../../resource/colors.dart';
-
 
 class GameAreaWeb extends ConsumerStatefulWidget {
   var scrollController;

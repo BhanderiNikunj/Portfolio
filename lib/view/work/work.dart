@@ -15,7 +15,7 @@ class Work extends StatefulWidget {
 class _WorkState extends State<Work> {
   @override
   Widget build(BuildContext context) {
-    return Responsive(
+    return ResponsiveScreen(
       tabView: WorkTab(),
       webView: WorkWeb(),
       mobileView: WorkMobile(),

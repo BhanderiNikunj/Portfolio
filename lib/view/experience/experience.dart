@@ -15,7 +15,7 @@ class Experience extends StatefulWidget {
 class _ExperienceState extends State<Experience> {
   @override
   Widget build(BuildContext context) {
-    return Responsive(
+    return ResponsiveScreen(
       webView: ExperienceWeb(),
       mobileView: ExperienceMob(),
       tabView: ExperienceTab(),
