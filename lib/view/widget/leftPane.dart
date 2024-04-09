@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:portfolio/common_widget.dart';
+import 'package:portfolio/controller/generalController.dart';
 import 'package:portfolio/globals.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:portfolio/resource/appClass.dart';
+import 'package:portfolio/resource/colors.dart';
 
-import '../../controller/generalController.dart';
-import '../../resource/appClass.dart';
-import '../../resource/colors.dart';
 
 class LeftPane extends ConsumerStatefulWidget {
   const LeftPane({Key? key}) : super(key: key);
@@ -69,8 +67,8 @@ class _LeftPaneState extends ConsumerState<LeftPane> {
                               onTap: () async {
                                 await launchWeb(url: AppClass.instaLink);
                               },
-                              onHover: (bol) {
-                                if (bol) {
+                              onHover: (bool) {
+                                if (bool) {
                                   ref.read(hoverProvider.notifier).state =
                                       "insta";
                                 } else {

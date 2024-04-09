@@ -1,18 +1,17 @@
 class Strings {
   /* Intro screen contents */
-  static final welcomeTxt = '''Hi, my name is''';
-  static final name = '''Nikunj Bhanderi.'''; // add . at the end
-  static final whatIdo =
-      '''I build things for the mobile/web.'''; // add . at the end
+  static final welcomeTxt = "Hi, my name is";
+  static final name = "Nikunj Bhanderi.";
+  static final whatIdo = "I build things for the mobile/web.";
   static final introAbout =
-      '''I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at ''';
-  static final currentOrgName = '''NetAccess.'''; // add . at the end
+      "I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at";
+  static final currentOrgName = " NetAccess.";
 
   /* About screen contents */
   static final aboutPara1 =
-      '''Hello! Myself Jeeva and I enjoy creating things that live on the internet. My interest in mobile/web development started back in 2019 when I decided to clone some applications — turns my passion into profession.''';
+      "Hello! My name is Nikunj Bhanderi and I enjoy creating things that live on the internet. My journey started in native app development back in 2021 & later on I started learning flutter app development when flutter was in 2.8.1 version and now it's in 3.19.5 on 28 March 2024, I have lot's of skills in my back pocket including flutter, Mysql, I love to express and learn more technology every day.";
   static final aboutPara2 =
-      '''Fast-forward to today, and I’ve had the privilege of working for a good organization, a product-based, a huge corporation, and a student-led working atmosphere. My main focus these days is building accessible, inclusive products and digital experiences at Netaccess for a variety of clients.''';
+      "Fast-forward to today, and I’ve had the privilege of working for a good organization, a product-based, a huge corporation, and a student-led working atmosphere. My main focus these days is building accessible, inclusive products and digital experiences at Netaccess for a variety of clients.";
   static final aboutPara3 =
       '''I also freelance for various clients across the world. If you've any ideas about creating a project or something, feel free to contact me!''';
 
@@ -28,11 +27,11 @@ class Strings {
   static final expDesig1 = '''Android Developer''';
   static final expDur1 = '''Nov 2019 - Mar 2020''';
   static final expAbout1 =
-  '''To kick start my carrier in IT, joined as an Intern to gain knowledge and experience in software industry, Mobile Application Development.''';
+      '''To kick start my carrier in IT, joined as an Intern to gain knowledge and experience in software industry, Mobile Application Development.''';
   static final expAbout1_2 =
-  '''Learned and explored native Android architecture models, network calls and core functionality.''';
+      '''Learned and explored native Android architecture models, network calls and core functionality.''';
   static final expAbout1_3 =
-  '''Has worked on several live projects on different platforms such as e-commerce, ERP, CMS Applications.''';
+      '''Has worked on several live projects on different platforms such as e-commerce, ERP, CMS Applications.''';
 
   static final expCompName2 = '''Rax-Tech International''';
   static final expDesig2 = '''Mobile App Developer''';
@@ -48,14 +47,13 @@ class Strings {
   static final expDesig3 = '''Senior Software Engineer''';
   static final expDur3 = '''Jun 2022 - Present''';
   static final expAbout3 =
-  '''An entity of India's leading business conglomerate Murugappa Group of companies.''';
+      '''An entity of India's leading business conglomerate Murugappa Group of companies.''';
   static final expAbout3_2 =
-  '''Worked with a team of 5 engineers to create field force automation applications, business-to-business applications, etc.''';
+      '''Worked with a team of 5 engineers to create field force automation applications, business-to-business applications, etc.''';
   static final expAbout3_3 =
-  '''Interfacing with customers on a weekly basis, delivering technology expertise.''';
+      '''Interfacing with customers on a weekly basis, delivering technology expertise.''';
 
   /* Contact screen content */
   static final endTxt =
       '''Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!''';
-
 }

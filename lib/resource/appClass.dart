@@ -17,8 +17,7 @@ class AppClass {
   static const String linkedinLink =
       'https://www.linkedin.com/in/nikunj-bhanderi-74974b2a7/';
   static final resumeDownloadURL =
-      '''https://jeeva-portfolio.s3.amazonaws.com/JEEVANANDHAM's+Resume.pdf''';
-
+      "https://drive.google.com/file/d/1LoRMrmlfjVfWRj5P8Sn6U9uRy74c13VX/view?usp=sharing";
   static final gitSafeC19 = '''https://github.com/jeeva-HBK/SafeC19''';
 
   // static final gitHermarts = '''https://github.com/jeeva-HBK/SafeC19''';
